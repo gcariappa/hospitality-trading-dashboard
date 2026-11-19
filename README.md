@@ -1,23 +1,23 @@
 # Hospitality trading dashboard (Power BI)
 
-A two-page Power BI report for a food-led pub, built to show where a small venue loses money and where demand outgrows capacity. All numbers are **sample data for illustration**, not a real business's figures.
+A two-page Power BI report showing where a food-led pub loses money and where demand outgrows capacity. **All numbers are sample data for illustration.**
 
-## Page 1: Bar yield
+**At a glance**
+- **Bar yield:** rotating beer taps waste over twice as much as core lines, costing about £2,000 above target in 12 weeks.
+- **Kitchen capacity:** the kitchen sold out on 27 of 36 weekend days, turning away an estimated 360 covers (about £6.7k).
+
+## Page 1: Where the bar loses stock
 ![Bar yield page](page1-bar-yield.png)
 
-- **Question:** which beer lines lose the most stock between keg and glass?
-- **Finding (sample data):** rotating taps lose over twice as much beer as core lines, about £2,000 above a 4% target in 12 weeks.
-- **Shows:** sales, gross margin, labour cost %, yield loss by tap, £ lost above target, weekly trend for core vs rotating lines.
+Compares stock poured with stock sold for each tap, against a 4% waste target.
 
-## Page 2: Kitchen capacity and demand
+## Page 2: Where demand beats capacity
 ![Kitchen capacity page](page2-kitchen-capacity.png)
 
-- **Question:** is the kitchen turning away weekend demand?
-- **Finding (sample data):** the kitchen sold out on 27 of 36 weekend days, turning away an estimated 360 covers (about £6.7k) in 12 weeks.
-- **Shows:** average covers served vs kitchen capacity by day, estimated covers turned away, upstairs room hire by month, and sales on live-music nights vs other nights.
+Compares covers served with kitchen capacity by day, and shows room hire by month and sales on live-music nights.
 
 ## How it was built
-- Power BI and Power Query, using a star schema of sales, product, stock and kitchen tables.
-- Each page leads with its finding as the title, so a manager gets the answer before reading the charts.
+- Power BI and Power Query, on a star schema of sales, product, stock and kitchen tables.
+- Each page title states its finding, so a manager gets the answer before reading the charts.
 
 Built by Gana Cariappa.
